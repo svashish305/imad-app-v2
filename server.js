@@ -106,6 +106,7 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res) {
   //articleName == article-one
   //articles[articleName] = {} content object for article one
+  //possible via the express framework
   var articleNmae = req.params.articleNmae;
   res.send(createTemplate(articles[articleName]));
 });
