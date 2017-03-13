@@ -5,10 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var artilces = { 
+articleOne : {
     title: 'Article One | Shubhashish',
     heading: 'Article One',
-    date: 'Feb 27, 2017',
+    date: 'Mar 13, 2017',
     content: `  
                 <p>
                     This is the content of my first article. This is the content of my first article. This is the content of my first article.
@@ -22,6 +23,43 @@ var articleOne = {
                     This is the content of my first article. This is the content of my first article. This is the content of my first article.
                     This is the content of my first article. This is the content of my first article. This is the content of my first article.
                 </p>`
+} ,
+articleTwo : {
+    title: 'Article Two | Shubhashish',
+    heading: 'Article Two',
+    date: 'FMar 13, 2017',
+    content: 
+                <p>
+                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
+                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
+                </p>
+                <p>
+                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
+                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
+                </p>
+                <p>
+                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
+                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
+                </p>
+} ,
+articleThree : {
+    title: 'Article Three | Shubhashish',
+    heading: 'Article Three',
+    date: 'FMar 13, 2017',
+    content: 
+                <p>
+                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
+                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
+                </p>
+                <p>
+                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
+                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
+                </p>
+                <p>
+                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
+                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
+                </p>
+}    
 }
 
 function createTemplate(data) {
