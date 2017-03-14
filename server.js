@@ -22,12 +22,13 @@ var articles = {
                 <p>
                     This is the content of my first article. This is the content of my first article. This is the content of my first article.
                     This is the content of my first article. This is the content of my first article. This is the content of my first article.
-                </p>`
-} ,
+                </p> 
+             `
+    } ,
     'article-two' : {
     title: 'Article Two | Shubhashish',
     heading: 'Article Two',
-    date: 'FMar 13, 2017',
+    date: 'Mar 13, 2017',
     content: `  
                 <p>
                     This is the content of my second article. This is the content of my second article. This is the content of my second article.
@@ -40,13 +41,14 @@ var articles = {
                 <p>
                     This is the content of my second article. This is the content of my second article. This is the content of my second article.
                     This is the content of my second article. This is the content of my second article. This is the content of my second article.
-                </p>`
-} ,
+                </p>
+             `
+    } ,
     'article-three' : {
     title: 'Article Three | Shubhashish',
     heading: 'Article Three',
-    date: 'FMar 13, 2017',
-    content:  `
+    date: 'Mar 13, 2017',
+    content: `
                 <p>
                     This is the content of my third article. This is the content of my third article. This is the content of my third article.
                     This is the content of my third article. This is the content of my third article. This is the content of my third article.
@@ -58,8 +60,9 @@ var articles = {
                 <p>
                     This is the content of my third article. This is the content of my third article. This is the content of my third article.
                     This is the content of my third article. This is the content of my third article. This is the content of my third article.
-                </p>`    
-} 
+                </p>
+             `    
+    } 
 };
 
 function createTemplate(data) {
