@@ -6,21 +6,19 @@ button.onclick = function () {
     var request = new XMLHttpRequest();
     // Capture the response and store it in a variable
     request.onreadystatechange = function () {
-        if(request.readyState === XMLHttpRequest.DONE) {
+        if (request.readyState === XMLHttpRequest.DONE) {
             //Take some action
-            if(request.status === 200) {
+            if (request.status === 200) {
                 var counter = request.responseText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
             }
             // Not done yet
-            
-            
         }   
     };
     
     // Make the request
-    request.OPEN('GET', 'http://http://svashish305.imad.hasura-app.io/counter', true);
+    request.OPEN('GET', 'http://svashish305.imad.hasura-app.io/counter', true);
     request.send(null);
 };
 
