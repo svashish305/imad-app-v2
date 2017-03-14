@@ -18,7 +18,7 @@ button.onclick = function () {
     };
     
     // Make the request
-    request.OPEN('GET', 'http://svashish305.imad.hasura-app.io/counter', true);
+    request.open('GET', 'http://svashish305.imad.hasura-app.io/counter', true);
     request.send(null);
 };
 
