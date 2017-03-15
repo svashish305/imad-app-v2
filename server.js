@@ -14,66 +14,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = { 
-    'article-one' : {
-    title: 'Article One | Shubhashish',
-    heading: 'Article One',
-    date: 'Mar 13, 2017',
-    content: `  
-                <p>
-                    This is the content of my first article. This is the content of my first article. This is the content of my first article.
-                    This is the content of my first article. This is the content of my first article. This is the content of my first article.
-                </p>
-                <p>
-                    This is the content of my first article. This is the content of my first article. This is the content of my first article.
-                    This is the content of my first article. This is the content of my first article. This is the content of my first article.
-                </p>
-                <p>
-                    This is the content of my first article. This is the content of my first article. This is the content of my first article.
-                    This is the content of my first article. This is the content of my first article. This is the content of my first article.
-                </p> 
-             `
-    } ,
-    'article-two' : {
-    title: 'Article Two | Shubhashish',
-    heading: 'Article Two',
-    date: 'Mar 13, 2017',
-    content: `  
-                <p>
-                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
-                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
-                </p>
-                <p>
-                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
-                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
-                </p>
-                <p>
-                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
-                    This is the content of my second article. This is the content of my second article. This is the content of my second article.
-                </p>
-             `
-    } ,
-    'article-three' : {
-    title: 'Article Three | Shubhashish',
-    heading: 'Article Three',
-    date: 'Mar 13, 2017',
-    content: `
-                <p>
-                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
-                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
-                </p>
-                <p>
-                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
-                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
-                </p>
-                <p>
-                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
-                    This is the content of my third article. This is the content of my third article. This is the content of my third article.
-                </p>
-             `    
-    } 
-};
-
 function createTemplate(data) {
     var title = data.title;
     var date = data.date;
