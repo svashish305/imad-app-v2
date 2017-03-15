@@ -151,7 +151,8 @@ app.get('/articles/:articleName', function (req, res) {
   //articles[articleName] = {} content object for article one
   //possible via the express framework
   
-  pool.query("SELECT * FROM article WHERE title = " + req.params.articleName, function (err, result) {
+  // SELECT * FROM article WHERE title = article-one ('-' thought of minus operator so one is considered as column name, so put 'article-one')
+  pool.query("SELECT * FROM article WHERE title = '" + req.params.articleName + "'", function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
